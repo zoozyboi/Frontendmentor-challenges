@@ -1,0 +1,144 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.main .body-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .item {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.main .item:first-child {
+  background-color: #E28525;
+}
+
+.main .item:nth-child(2) {
+  background-color: #016972;
+}
+
+.main .item:last-child {
+  background-color: #00403F;
+}
+
+.main .logo {
+  position: absolute;
+  top: 7%;
+  left: 11%;
+  width: 50px;
+  height: 40px;
+}
+
+.main .logo:first-child {
+  background: url("../images/icon-sedans.svg");
+}
+
+.main .logo:nth-child(2) {
+  background-image: url("/app/images//icon-suvs.svg");
+}
+
+.main .logo:last-child {
+  background-image: url("/app/images/icon-luxury.svg");
+}
+
+.main .text {
+  position: absolute;
+  top: 28%;
+  left: 17%;
+  margin-right: 40px;
+}
+
+.main .text h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.main .text p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.main .button {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: -100%;
+  left: 0%;
+}
+
+.main .button #color1 {
+  color: #E28525;
+}
+
+.main .button #color2 {
+  color: #016972;
+}
+
+.main .button #color3 {
+  color: #00403F;
+}
+
+.main .button a {
+  text-decoration: none;
+}
+
+@media (max-width: 720px) {
+  .main .body-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 210vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
